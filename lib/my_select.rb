@@ -6,7 +6,7 @@ def my_select(collection)
  while i < collection.length
  # binding.pry
   collection[i]
-  yield(collection[i])
+  new_array << yield(collection[i])
   i += 1 
  end
  new_array
